@@ -1,0 +1,122 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/misc.xml
+* .idea/workspace.xml
+* app/
+* app/build.gradle
+* app/libs/
+* app/libs/unity-classes.jar
+* app/src/
+* app/src/main/
+* app/src/main/AndroidManifest.xml
+* app/src/main/assets/
+* app/src/main/assets/bin/
+* app/src/main/assets/bin/Data/
+* app/src/main/assets/bin/Data/Managed/
+* app/src/main/assets/bin/Data/Managed/Assembly-CSharp.dll
+* app/src/main/assets/bin/Data/Managed/Assembly-CSharp.dll.mdb
+* app/src/main/assets/bin/Data/Managed/Mono.Security.dll
+* app/src/main/assets/bin/Data/Managed/Mono.Security.dll.mdb
+* app/src/main/assets/bin/Data/Managed/System.Core.dll
+* app/src/main/assets/bin/Data/Managed/System.Core.dll.mdb
+* app/src/main/assets/bin/Data/Managed/System.dll
+* app/src/main/assets/bin/Data/Managed/System.dll.mdb
+* app/src/main/assets/bin/Data/Managed/UnityEngine.Networking.dll
+* app/src/main/assets/bin/Data/Managed/UnityEngine.Networking.dll.mdb
+* app/src/main/assets/bin/Data/Managed/UnityEngine.UI.dll
+* app/src/main/assets/bin/Data/Managed/UnityEngine.UI.dll.mdb
+* app/src/main/assets/bin/Data/Managed/UnityEngine.dll
+* app/src/main/assets/bin/Data/Managed/UnityEngine.dll.mdb
+* app/src/main/assets/bin/Data/Managed/mscorlib.dll
+* app/src/main/assets/bin/Data/Managed/mscorlib.dll.mdb
+* app/src/main/assets/bin/Data/PlayerConnectionConfigFile
+* app/src/main/assets/bin/Data/Resources/
+* app/src/main/assets/bin/Data/Resources/unity_builtin_extra
+* app/src/main/assets/bin/Data/globalgamemanagers
+* app/src/main/assets/bin/Data/globalgamemanagers.assets
+* app/src/main/assets/bin/Data/level0
+* app/src/main/assets/bin/Data/settings.xml
+* app/src/main/assets/bin/Data/sharedassets0.assets
+* app/src/main/assets/bin/Data/splash.png
+* app/src/main/assets/bin/Data/unity default resources
+* app/src/main/java/
+* app/src/main/java/com/
+* app/src/main/java/com/calebmacbook/
+* app/src/main/java/com/calebmacbook/android/
+* app/src/main/java/com/calebmacbook/android/UnityPlayerActivity.java
+* app/src/main/java/com/calebmacbook/android/UnityPlayerNativeActivity.java
+* app/src/main/java/com/calebmacbook/android/UnityPlayerProxyActivity.java
+* app/src/main/jniLibs/
+* app/src/main/jniLibs/armeabi-v7a/
+* app/src/main/jniLibs/armeabi-v7a/libmain.so
+* app/src/main/jniLibs/armeabi-v7a/libmono.so
+* app/src/main/jniLibs/armeabi-v7a/libunity.so
+* app/src/main/jniLibs/x86/
+* app/src/main/jniLibs/x86/libmain.so
+* app/src/main/jniLibs/x86/libmono.so
+* app/src/main/jniLibs/x86/libunity.so
+* app/src/main/res/
+* app/src/main/res/drawable-xhdpi/
+* app/src/main/res/drawable-xhdpi/app_banner.png
+* app/src/main/res/drawable/
+* app/src/main/res/drawable/app_icon.png
+* app/src/main/res/values-v14/
+* app/src/main/res/values-v14/styles.xml
+* app/src/main/res/values-v21/
+* app/src/main/res/values-v21/styles.xml
+* app/src/main/res/values/
+* app/src/main/res/values/strings.xml
+* app/src/main/res/values/styles.xml
+* build.gradle
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* settings.gradle
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/armeabi-v7a/libmain.so => app/src/main/jniLibs/armeabi-v7a/libmain.so
+* libs/armeabi-v7a/libmono.so => app/src/main/jniLibs/armeabi-v7a/libmono.so
+* libs/armeabi-v7a/libunity.so => app/src/main/jniLibs/armeabi-v7a/libunity.so
+* libs/unity-classes.jar => app/libs/unity-classes.jar
+* libs/x86/libmain.so => app/src/main/jniLibs/x86/libmain.so
+* libs/x86/libmono.so => app/src/main/jniLibs/x86/libmono.so
+* libs/x86/libunity.so => app/src/main/jniLibs/x86/libunity.so
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
