@@ -7,9 +7,10 @@ public class BallScript : MonoBehaviour {
 	public Text golfText;
 	public Text winText;
 	private int count, golfCount;
+	private int[] par = { 3, 4, 5 };
 	// Use this for initialization
 	void Start () {
-		count = 0;
+		count = 1;
 		golfCount = 0;
 		setText ();
 		setGolfText ();
@@ -24,14 +25,34 @@ public class BallScript : MonoBehaviour {
 		if (other.gameObject.CompareTag ("PickUp")) {
 			other.gameObject.SetActive (false);
 			count++;
-			if (count >= 1) {
-				winText.text = "YOU WIN!!!!!";
+			if (count >= 2) {
+				setScore ();
 			}
 			setText ();
 		} 
 	}
+	void setScore (){
+		if (golfCount == 1)
+			winText.text = "Hole in one!!!!!";
+		else if (golfCount - par[count - 2] == -3)
+			winText.text = "Albatross!!!!";
+		else if (golfCount - par[count - 2] == -2)
+			winText.text = "Eagle!!!";
+		else if (golfCount - par[count - 2] == -1)
+			winText.text = "Birdie!!";
+		else if (golfCount - par[count - 2] == 0)
+			winText.text = "Par!";
+		else if (golfCount - par[count - 2] == 1)
+			winText.text = "Bogey";
+		else if (golfCount - par[count - 2] == 2)
+			winText.text = "Double Bogey";
+		else if (golfCount - par[count - 2] == 3)
+			winText.text = "Triple Bogey";
+		else if (golfCount - par[count - 2] > 3)
+			winText.text = (golfCount - par[count - 2]) + " over par :(";
+	}
 	void setText(){
-		countText.text = "Count: " + count.ToString();	
+		countText.text = "Hole #" + count.ToString();	
 	}
 	void setGolfText(){
 		golfText.text = "Count: " + golfCount.ToString();	
@@ -40,7 +61,6 @@ public class BallScript : MonoBehaviour {
 		if (c.gameObject.CompareTag("Player")) {
 			golfCount++;
 			setGolfText ();
-
 		}
 	}
 }
